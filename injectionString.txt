@@ -1,0 +1,1 @@
+*,;,~,%2527,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa,||,<>,-/@#$,^,!,@,<!-->,<TestId>,[],*,\',",@@version,-- -,#,?,union select 1 from dual,%00,%2527,%84,||,)(,{},\'OR,&&

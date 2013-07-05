@@ -43,6 +43,19 @@ app.get("/injectinnext/:injection", function(req, res){
 
 });
 
+app.post("/injectinpost/", function(req, res){
+  //var body = JSON.stringify(req.body);
+  //console.log(req.body.data);
+  var i = 0;
+  while(i < injectionStrings.length){
+    if(req.body.data == injectionStrings[i]){
+      res.send(detectionString);
+      break;
+    }
+  }
+  res.send("done");
+});
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log("listening");
 });

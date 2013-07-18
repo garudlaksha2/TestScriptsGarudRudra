@@ -30,16 +30,14 @@ app.configure(function(){
   app.use(express.bodyParser());
 });
 
-app.get("/:injectone/:injecttwo", function(req, res){
+/*app.get("/:injection", function(req, res){
   
-  console.log(req.params.injectone);
-  console.log(req.params.injecttwo);
-  var injectone = req.params.injectone;
-  var injecttwo = req.params.injecttwo;
+  console.log(req.params.injection);
+  var injection = req.params.injection;
   var injectionFound = 0;
   var i = 0;
   while(i < injectionStrings.length){
-    if(injectone == injectionStrings[i] || injecttwo == injectionStrings[i]){
+    if(injection == injectionStrings[i]){
       console.log("replying to injection");
       var injectionFound = 1;
       res.send(detectionString);
@@ -47,9 +45,9 @@ app.get("/:injectone/:injecttwo", function(req, res){
     }
     i = i + 1;
   }
-  if(injectionFound == 0){res.send("reply ok no");}  
+  if(injectionFound == 0){res.send("reply ok no");}    
 
-});
+}); */
 
 app.get("/injectinnext/:injection", function(req, res){
   
